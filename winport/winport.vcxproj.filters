@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="model">
+      <UniqueIdentifier>{87a171be-9fda-4063-9f4e-05487628bff2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cheb_eval.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="error.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="winport.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="stream.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="erfc.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\others\x86\include\sys\time.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="chebyshev.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="core-config.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="eval.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="winport.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="gsl_export.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\others\x86\include\sys\time.h">
+      <Filter>model</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

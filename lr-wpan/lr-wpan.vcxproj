@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{32CF2484-93DD-47CD-975A-06944AD15C32}</ProjectGuid>
+    <RootNamespace>lrwpan</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)headers;$(SolutionDir)others\x86\include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);WIN32</PreprocessorDefinitions>
+      <AdditionalOptions>/D "NS3_LOG_ENABLE" %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)ns-3\src\lr-wpan\model\*.h"  "$(SolutionDir)headers\ns3"
+copy "$(SolutionDir)ns-3\src\lr-wpan\helper\*.h"  "$(SolutionDir)headers\ns3"</Command>
+    </PostBuildEvent>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ns-3\src\lr-wpan\helper\lr-wpan-helper.cc" />
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-csmaca.cc" />
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-error-model.cc" />
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-interference-helper.cc" />
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-lqi-tag.cc" />
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-mac-header.cc" />
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-mac-trailer.cc" />
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-mac.cc" />
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-net-device.cc" />
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-phy.cc" />
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-spectrum-signal-parameters.cc" />
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-spectrum-value-helper.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ns-3\src\lr-wpan\helper\lr-wpan-helper.h" />
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-csmaca.h" />
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-error-model.h" />
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-interference-helper.h" />
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-lqi-tag.h" />
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-mac-header.h" />
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-mac-trailer.h" />
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-mac.h" />
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-net-device.h" />
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-phy.h" />
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-spectrum-signal-parameters.h" />
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-spectrum-value-helper.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

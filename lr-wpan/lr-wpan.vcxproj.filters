@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="helper">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="model">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ns-3\src\lr-wpan\helper\lr-wpan-helper.cc">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-csmaca.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-error-model.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-interference-helper.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-lqi-tag.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-mac.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-mac-header.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-mac-trailer.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-net-device.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-phy.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-spectrum-signal-parameters.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ns-3\src\lr-wpan\model\lr-wpan-spectrum-value-helper.cc">
+      <Filter>model</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ns-3\src\lr-wpan\helper\lr-wpan-helper.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-csmaca.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-error-model.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-interference-helper.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-lqi-tag.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-mac.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-mac-header.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-mac-trailer.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-net-device.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-phy.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-spectrum-signal-parameters.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ns-3\src\lr-wpan\model\lr-wpan-spectrum-value-helper.h">
+      <Filter>model</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

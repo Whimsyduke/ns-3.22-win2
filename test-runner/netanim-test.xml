@@ -1,0 +1,28 @@
+<anim ver="netanim-3.105" >
+<node id="0" sysId="0" locX="0" locY="10" >
+<nu p="c" t="0" id="0" r="255" g="0" b="0" >
+<nu p="s" t="0" id="0" w="1" h="1" >
+<ncs ncId="0" n="RemainingEnergy" t="DOUBLE" >
+<nc c="0" i="0" t="0" v="1" >
+<nc c="0" i="0" t="1" v="0.4" >
+</anim>
+" w="1" h="1" >
+<nu p="s" t="0" id="1" w="1" h="1" >
+<ncs ncId="0" n="RemainingEnergy" t="DOUBLE" >
+<p fId="0" fbTx="2" lbTx="2.0016864" tId="1" fbRx="2.002" lbRx="2.0036864" >
+<p fId="1" fbTx="2.0036864" lbTx="2.0053728" tId="0" fbRx="2.0056864" lbRx="2.0073728" >
+<p fId="0" fbTx="3" lbTx="3.0016864" tId="1" fbRx="3.002" lbRx="3.0036864" >
+<p fId="1" fbTx="3.0036864" lbTx="3.0053728" tId="0" fbRx="3.0056864" lbRx="3.0073728" >
+<p fId="0" fbTx="4" lbTx="4.0016864" tId="1" fbRx="4.002" lbRx="4.0036864" >
+<p fId="1" fbTx="4.0036864" lbTx="4.0053728" tId="0" fbRx="4.0056864" lbRx="4.0073728" >
+<p fId="0" fbTx="5" lbTx="5.0016864" tId="1" fbRx="5.002" lbRx="5.0036864" >
+<p fId="1" fbTx="5.0036864" lbTx="5.0053728" tId="0" fbRx="5.0056864" lbRx="5.0073728" >
+<p fId="0" fbTx="6" lbTx="6.0016864" tId="1" fbRx="6.002" lbRx="6.0036864" >
+<p fId="1" fbTx="6.0036864" lbTx="6.0053728" tId="0" fbRx="6.0056864" lbRx="6.0073728" >
+<p fId="0" fbTx="7" lbTx="7.0016864" tId="1" fbRx="7.002" lbRx="7.0036864" >
+<p fId="1" fbTx="7.0036864" lbTx="7.0053728" tId="0" fbRx="7.0056864" lbRx="7.0073728" >
+<p fId="0" fbTx="8" lbTx="8.0016864" tId="1" fbRx="8.002" lbRx="8.0036864" >
+<p fId="1" fbTx="8.0036864" lbTx="8.0053728" tId="0" fbRx="8.0056864" lbRx="8.0073728" >
+<p fId="0" fbTx="9" lbTx="9.0016864" tId="1" fbRx="9.002" lbRx="9.0036864" >
+<p fId="1" fbTx="9.0036864" lbTx="9.0053728" tId="0" fbRx="9.0056864" lbRx="9.0073728" >
+</anim>

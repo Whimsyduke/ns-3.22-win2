@@ -1,0 +1,86 @@
+
+//无法打开包括文件:“sys/time.h”: No such file or directory
+#ifndef WIN32
+#include <sys/time.h>
+#else
+#include <other-time.h>
+#endif
+
+
+//无法打开包括文件:“unistd.h”: No such file or directory
+#ifdef WIN32 
+#define _UNISTD_H  
+#include <io.h>  
+#include <process.h>  
+#else
+#include <unistd.h>
+#endif
+
+//linux头文件pthread.h。2014.12.4
+#if !defined(WIN32) || defined(PTHREADH)
+#include <pthread.h>
+#else
+#ifdef HAVE_PTHREAD_H
+#undef HAVE_PTHREAD_H
+#endif
+#endif
+
+
+//linux头文件gtk/*.h。2014.12.4
+#if !defined(WIN32) || defined(GTKH)
+#include <gtk/gtk.h>
+#endif
+
+
+//linux头文件libxml/*.h。2014.12.4.
+#if !defined(WIN32) && defined(LIBXMLH)
+#ifndef WIN32
+#include <libxml/xmlwriter.h>
+#include <libxml/xmlreader.h>
+#ifndef HAVE_LIBXML2
+#define HAVE_LIBXML2 1
+#endif
+#else
+#endif
+#endif
+
+//无法打开包括文件:“arpa/inet.h,netinet/in.h,sys/socket.h”: No such file or directory	
+#ifndef WIN32
+#include <arpa/inet.h>
+#include <netinet/in.h>
+#include <sys/socket.h>
+#else
+#include <windows.h>
+#pragma comment(lib, "wsock32.lib")
+#endif
+
+//pthread X86X64选择
+#ifdef WIN32
+#pragma comment(lib,"pthreadVC2.lib")
+#endif 
+
+
+//gtklib设置
+#ifdef WIN32
+#pragma comment(lib,"gtk-win32-3.0.lib")
+#endif 
+
+
+//sqlite设置
+#ifdef WIN32
+#pragma comment(lib,"sqlite3.lib")
+#endif 
+
+
+//libxml设置
+#ifdef WIN32
+#pragma comment(lib,"libxml2.lib")
+#pragma comment(lib,"libxml2_a.lib")
+#pragma comment(lib,"libxml2_a_dll.lib")
+#endif 
+
+//gsllib设置
+#ifdef WIN32
+#pragma comment(lib,"libgsl.lib")
+#pragma comment(lib,"libgslcblas")
+#endif 

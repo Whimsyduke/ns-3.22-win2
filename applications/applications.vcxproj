@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ns-3\src\applications\helper\bulk-send-helper.cc" />
+    <ClCompile Include="..\ns-3\src\applications\helper\on-off-helper.cc" />
+    <ClCompile Include="..\ns-3\src\applications\helper\packet-sink-helper.cc" />
+    <ClCompile Include="..\ns-3\src\applications\helper\ping6-helper.cc" />
+    <ClCompile Include="..\ns-3\src\applications\helper\radvd-helper.cc" />
+    <ClCompile Include="..\ns-3\src\applications\helper\udp-client-server-helper.cc" />
+    <ClCompile Include="..\ns-3\src\applications\helper\udp-echo-helper.cc" />
+    <ClCompile Include="..\ns-3\src\applications\helper\v4ping-helper.cc" />
+    <ClCompile Include="..\ns-3\src\applications\model\application-packet-probe.cc" />
+    <ClCompile Include="..\ns-3\src\applications\model\bulk-send-application.cc" />
+    <ClCompile Include="..\ns-3\src\applications\model\onoff-application.cc" />
+    <ClCompile Include="..\ns-3\src\applications\model\packet-loss-counter.cc" />
+    <ClCompile Include="..\ns-3\src\applications\model\packet-sink.cc" />
+    <ClCompile Include="..\ns-3\src\applications\model\ping6.cc" />
+    <ClCompile Include="..\ns-3\src\applications\model\radvd-interface.cc" />
+    <ClCompile Include="..\ns-3\src\applications\model\radvd-prefix.cc" />
+    <ClCompile Include="..\ns-3\src\applications\model\radvd.cc" />
+    <ClCompile Include="..\ns-3\src\applications\model\seq-ts-header.cc" />
+    <ClCompile Include="..\ns-3\src\applications\model\udp-client.cc" />
+    <ClCompile Include="..\ns-3\src\applications\model\udp-echo-client.cc" />
+    <ClCompile Include="..\ns-3\src\applications\model\udp-echo-server.cc" />
+    <ClCompile Include="..\ns-3\src\applications\model\udp-server.cc" />
+    <ClCompile Include="..\ns-3\src\applications\model\udp-trace-client.cc" />
+    <ClCompile Include="..\ns-3\src\applications\model\v4ping.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ns-3\src\applications\helper\bulk-send-helper.h" />
+    <ClInclude Include="..\ns-3\src\applications\helper\on-off-helper.h" />
+    <ClInclude Include="..\ns-3\src\applications\helper\packet-sink-helper.h" />
+    <ClInclude Include="..\ns-3\src\applications\helper\ping6-helper.h" />
+    <ClInclude Include="..\ns-3\src\applications\helper\radvd-helper.h" />
+    <ClInclude Include="..\ns-3\src\applications\helper\udp-client-server-helper.h" />
+    <ClInclude Include="..\ns-3\src\applications\helper\udp-echo-helper.h" />
+    <ClInclude Include="..\ns-3\src\applications\helper\v4ping-helper.h" />
+    <ClInclude Include="..\ns-3\src\applications\model\application-packet-probe.h" />
+    <ClInclude Include="..\ns-3\src\applications\model\bulk-send-application.h" />
+    <ClInclude Include="..\ns-3\src\applications\model\onoff-application.h" />
+    <ClInclude Include="..\ns-3\src\applications\model\packet-loss-counter.h" />
+    <ClInclude Include="..\ns-3\src\applications\model\packet-sink.h" />
+    <ClInclude Include="..\ns-3\src\applications\model\ping6.h" />
+    <ClInclude Include="..\ns-3\src\applications\model\radvd-interface.h" />
+    <ClInclude Include="..\ns-3\src\applications\model\radvd-prefix.h" />
+    <ClInclude Include="..\ns-3\src\applications\model\radvd.h" />
+    <ClInclude Include="..\ns-3\src\applications\model\seq-ts-header.h" />
+    <ClInclude Include="..\ns-3\src\applications\model\udp-client.h" />
+    <ClInclude Include="..\ns-3\src\applications\model\udp-echo-client.h" />
+    <ClInclude Include="..\ns-3\src\applications\model\udp-echo-server.h" />
+    <ClInclude Include="..\ns-3\src\applications\model\udp-server.h" />
+    <ClInclude Include="..\ns-3\src\applications\model\udp-trace-client.h" />
+    <ClInclude Include="..\ns-3\src\applications\model\v4ping.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0595E80B-3D2F-4737-AF51-8B912670B7CD}</ProjectGuid>
+    <RootNamespace>applications</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)headers;$(SolutionDir)others\x86\include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);WIN32</PreprocessorDefinitions>
+      <AdditionalOptions>/D "NS3_LOG_ENABLE" %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)ns-3\src\applications\model\*.h"  "$(SolutionDir)headers\ns3"
+copy "$(SolutionDir)ns-3\src\applications\helper\*.h"  "$(SolutionDir)headers\ns3"</Command>
+    </PostBuildEvent>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

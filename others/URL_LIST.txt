@@ -1,0 +1,58 @@
+libxml:config-store
+http://xmlsoft.org/downloads.html
+Include Add:$(SolutionDir)others\includes\libxml\x86\include\libxml2
+Lib Add:$(SolutionDir)others\includes\libxml\x86\lib
+copy:
+
+libiconv:config-store
+http://gnuwin32.sourceforge.net/packages/libiconv.htm
+Include Add:$(SolutionDir)others\includes\libiconv\include
+Lib Add:$(SolutionDir)others\includes\libiconv\lib
+
+gtk：config-store
+http://www.gtk.org/
+Include Add:$(SolutionDir)others\includes\gtk\x86\include\gtk-3.0
+Lib Add:$(SolutionDir)others\includes\gtk\x86\lib
+glib：config-store
+http://www.gtk.org/
+Include Add:$(SolutionDir)others\includes\glib\x86\include\glib-2.0
+			 $(SolutionDir)others\includes\glib\x86\lib\glib-2.0\include
+Lib Add:$(SolutionDir)others\includes\glib\x86\lib
+pango：config-store
+http://www.gtk.org/
+Include Add:$(SolutionDir)others\includes\pango\x86\include\pango-1.0
+Lib Add:$(SolutionDir)others\includes\pango\x86\lib
+cario：config-store
+http://www.gtk.org/
+Include Add:$(SolutionDir)others\includes\cairo\x86\include\cairo
+Lib Add:$(SolutionDir)others\includes\cairo\x86\lib
+gtk-pixbuf:config-store
+http://www.gtk.org/
+Include Add:$(SolutionDir)others\includes\gtk-pixbuf\x86\include\gdk-pixbuf-2.0
+Lib Add:$(SolutionDir)others\includes\gtk-pixbuf\x86\lib
+atk：config-store
+http://www.gtk.org/
+Include Add:$(SolutionDir)others\includes\atk\x86\include\atk-1.0
+Lib Add:$(SolutionDir)others\includes\atk\x86\lib
+
+pthreads:core
+http://sourceware.org/pthreads-win32/
+Include Add:$(SolutionDir)others\includes\pthreads\Pre-built.2\include
+Lib Add:$(SolutionDir)others\includes\pthreads\Pre-built.2\lib\x86
+
+sqlite:stats
+https://www.sqlite.org/
+Include Add:$(SolutionDir)others\includes\sqlite
+
+test-runner.core:gsl
+http://gnuwin32.sourceforge.net/packages/gsl.htm
+Include Add:$(SolutionDir)others\includes\gsl\include
+Lib Add:$(SolutionDir)others\includes\gsl\lib
+
+otherinclude:
+Include Add:$(SolutionDir)others\includes\otherinclude
+other-time.h:core
+https://social.msdn.microsoft.com/Forums/vstudio/en-US/430449b3-f6dd-4e18-84de-eebd26a8d668/gettimeofday
+other-unistd.h:core
+
+

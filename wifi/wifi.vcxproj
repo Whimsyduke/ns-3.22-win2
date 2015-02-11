@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ns-3\src\wifi\helper\athstats-helper.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\helper\ht-wifi-mac-helper.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\helper\nqos-wifi-mac-helper.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\helper\qos-wifi-mac-helper.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\helper\wifi-helper.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\helper\yans-wifi-helper.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\aarf-wifi-manager.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\aarfcd-wifi-manager.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\adhoc-wifi-mac.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\ampdu-subframe-header.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\ampdu-tag.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\amrr-wifi-manager.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\amsdu-subframe-header.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\ap-wifi-mac.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\aparf-wifi-manager.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\arf-wifi-manager.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\block-ack-agreement.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\block-ack-cache.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\block-ack-manager.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\capability-information.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\cara-wifi-manager.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\constant-rate-wifi-manager.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\ctrl-headers.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\dca-txop.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\dcf-manager.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\dcf.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\dsss-error-rate-model.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\edca-txop-n.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\error-rate-model.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\ht-capabilities.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\ideal-wifi-manager.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\interference-helper.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\mac-low.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\mac-rx-middle.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\mac-tx-middle.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\mgt-headers.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\minstrel-wifi-manager.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\mpdu-aggregator.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\mpdu-standard-aggregator.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\msdu-aggregator.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\msdu-standard-aggregator.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\nist-error-rate-model.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\onoe-wifi-manager.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\originator-block-ack-agreement.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\parf-wifi-manager.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\qos-blocked-destinations.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\qos-tag.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\qos-utils.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\random-stream.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\regular-wifi-mac.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\rraa-wifi-manager.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\snr-tag.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\ssid.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\sta-wifi-mac.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\status-code.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\supported-rates.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\wifi-channel.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\wifi-information-element-vector.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\wifi-information-element.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\wifi-mac-header.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\wifi-mac-queue.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\wifi-mac-trailer.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\wifi-mac.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\wifi-mode.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\wifi-net-device.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\wifi-phy-state-helper.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\wifi-phy.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\wifi-remote-station-manager.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\wifi-tx-vector.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\yans-error-rate-model.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\yans-wifi-channel.cc" />
+    <ClCompile Include="..\ns-3\src\wifi\model\yans-wifi-phy.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ns-3\src\wifi\helper\athstats-helper.h" />
+    <ClInclude Include="..\ns-3\src\wifi\helper\ht-wifi-mac-helper.h" />
+    <ClInclude Include="..\ns-3\src\wifi\helper\nqos-wifi-mac-helper.h" />
+    <ClInclude Include="..\ns-3\src\wifi\helper\qos-wifi-mac-helper.h" />
+    <ClInclude Include="..\ns-3\src\wifi\helper\wifi-helper.h" />
+    <ClInclude Include="..\ns-3\src\wifi\helper\yans-wifi-helper.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\aarf-wifi-manager.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\aarfcd-wifi-manager.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\adhoc-wifi-mac.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\ampdu-subframe-header.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\ampdu-tag.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\amrr-wifi-manager.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\amsdu-subframe-header.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\ap-wifi-mac.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\aparf-wifi-manager.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\arf-wifi-manager.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\block-ack-agreement.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\block-ack-cache.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\block-ack-manager.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\capability-information.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\cara-wifi-manager.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\constant-rate-wifi-manager.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\ctrl-headers.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\dca-txop.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\dcf-manager.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\dcf.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\dsss-error-rate-model.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\edca-txop-n.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\error-rate-model.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\ht-capabilities.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\ideal-wifi-manager.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\interference-helper.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\mac-low.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\mac-rx-middle.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\mac-tx-middle.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\mgt-headers.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\minstrel-wifi-manager.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\mpdu-aggregator.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\mpdu-standard-aggregator.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\msdu-aggregator.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\msdu-standard-aggregator.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\nist-error-rate-model.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\onoe-wifi-manager.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\originator-block-ack-agreement.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\parf-wifi-manager.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\qos-blocked-destinations.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\qos-tag.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\qos-utils.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\random-stream.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\regular-wifi-mac.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\rraa-wifi-manager.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\snr-tag.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\ssid.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\sta-wifi-mac.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\status-code.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\supported-rates.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\wifi-channel.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\wifi-information-element-vector.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\wifi-information-element.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\wifi-mac-header.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\wifi-mac-queue.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\wifi-mac-trailer.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\wifi-mac.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\wifi-mode.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\wifi-net-device.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\wifi-phy-standard.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\wifi-phy-state-helper.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\wifi-phy.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\wifi-preamble.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\wifi-remote-station-manager.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\wifi-tx-vector.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\yans-error-rate-model.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\yans-wifi-channel.h" />
+    <ClInclude Include="..\ns-3\src\wifi\model\yans-wifi-phy.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{38C26040-424B-4526-B0C6-4089A04EABE2}</ProjectGuid>
+    <RootNamespace>wifi</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)headers;$(SolutionDir)others\x86\include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);WIN32</PreprocessorDefinitions>
+      <AdditionalOptions>/D "NS3_LOG_ENABLE" %(AdditionalOptions)</AdditionalOptions>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)ns-3\src\wifi\model\*.h"  "$(SolutionDir)headers\ns3"
+copy "$(SolutionDir)ns-3\src\wifi\helper\*.h"  "$(SolutionDir)headers\ns3"
+</Command>
+    </PostBuildEvent>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

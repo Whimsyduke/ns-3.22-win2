@@ -1,0 +1,3 @@
+      test="hash (actual) == hashRef (limit)" actual="6051336694100604546" limit="12056207810209594884" in="e:\ns-3\temp\ns-3.21-win2\ns-3\src\core\test\hash-test-suite.cc:98" default Hash64 produced 53faaaa974273682, expected a750412079d53e04
+      test="value.GetHigh () (actual) == hi (limit)" actual="-1" limit="-2" in="e:\ns-3\temp\ns-3.21-win2\ns-3\src\core\test\int64x64-test-suite.cc:190" High parts do not match for input string "-1.000000000000000000054"
+      test="hash (actual) == hashRef (limit)" actual="6051336694100604546" limit="12056207810209594884" in="e:\ns-3\temp\ns-3.21-win2\ns-3\src\core\test\hash-test-suite.cc:98" default Hash64 produced 53faaaa974273682, expected a750412079d53e04
